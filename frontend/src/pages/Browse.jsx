@@ -3,6 +3,10 @@ import axios from "axios";
 import { Link } from "react-router-dom";   // ← add this
 import "./Browse.css";
 
+//to call the correct URL
+const API_BASE = import.meta.env.VITE_API_BASE;
+const ASSET_BASE = (API_BASE || "").replace(/\/api\/?$/, "");
+
 export default function Browse() {
   const [products, setProducts] = useState([]);
 
