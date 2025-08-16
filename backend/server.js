@@ -28,13 +28,10 @@ const allowedOrigins = [
 ];
 
 app.use(cors({
-  origin: (origin, cb) => {
-    if (!origin) return cb(null, true);          // allow curl/Postman
-    return cb(null, allowedOrigins.includes(origin));
-  },
-  credentials: false,                            // set true only if using cookies
+  origin: ["https://naylordesign-front.onrender.com", "http://localhost:5173"],
   methods: ["GET","POST","PUT","PATCH","DELETE","OPTIONS"],
-  allowedHeaders: ["Content-Type","Authorization"]
+  allowedHeaders: ["Content-Type","Authorization"],
+  credentials: false // keep false unless you’ll use cookies/sessions
 }));
 
 // (optional) fast preflight
