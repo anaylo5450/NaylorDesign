@@ -16,7 +16,7 @@ export default function Browse() {
     (async () => {
       try {
         // ✅ absolute URL to the backend service
-        const res = await axios.get(`${API_BASE}/products?limit=48`, { withCredentials: true });
+        const res = await axios.get(`${API_BASE}/products?limit=48`);
         // ✅ tolerate different response shapes
         const payload = res.data?.data ?? res.data?.items ?? res.data;
         setProducts(Array.isArray(payload) ? payload : []);
