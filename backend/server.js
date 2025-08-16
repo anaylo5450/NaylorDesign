@@ -30,8 +30,7 @@ const allowedOrigins = [
 app.use(cors({
   origin: ["https://naylordesign-front.onrender.com", "http://localhost:5173"],
   methods: ["GET","POST","PUT","PATCH","DELETE","OPTIONS"],
-  allowedHeaders: ["Content-Type","Authorization"],
-  credentials: false // keep false unless you’ll use cookies/sessions
+  allowedHeaders: ["Content-Type","Authorization"]
 }));
 
 // (optional) fast preflight
