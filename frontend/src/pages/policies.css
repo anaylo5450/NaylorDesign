@@ -1,0 +1,51 @@
+.pol-page {
+  background: #1c1c1c;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+}
+
+.pol-container {
+  width: 100%;
+  max-width: 900px;
+  padding: 80px 16px 60px;
+}
+
+.pol-title {
+  font-size: 40px;
+  line-height: 1.15;
+  margin: 0 0 10px;
+  text-align: center;
+}
+
+.pol-lede {
+  color: #cfcfcf;
+  max-width: 70ch;
+  margin: 0 auto 22px;
+  text-align: center;
+}
+.pol-lede a { color: #b7f0cd; text-decoration: underline; }
+
+.pol-block {
+  background: #121212;
+  border: 1px solid #2a2a2a;
+  border-radius: 14px;
+  padding: 16px;
+  margin-top: 14px;
+}
+.pol-block h2 {
+  margin: 0 0 8px;
+  font-size: 18px;
+}
+.pol-block p {
+  margin: 0;
+  color: #cfcfcf;
+  line-height: 1.6;
+}
+
+.pol-updated {
+  margin-top: 18px;
+  color: #a9a9a9;
+  text-align: center;
+  font-size: 12px;
+}

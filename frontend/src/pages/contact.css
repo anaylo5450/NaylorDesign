@@ -1,0 +1,18 @@
+.contact-page {
+  background: #1c1c1c;
+  color: #ffffff;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-container {
+  text-align: center;
+  font-size: 18px;
+}
+
+.contact-container a {
+  color: #b7f0cd;
+  text-decoration: underline;
+}
